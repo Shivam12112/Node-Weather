@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLinks}}
+</head>
+
+<body>
+    {{>navbar}}
+    <!-- main-header -->
+    <div class="contanier-fluid main_header h-100">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="row py-5 px-5">
+                    <div class="col-md-6 main_header_left">
+                        <p class="fw-bold pb-4">
+                            Welcome to <span class="text-info">'The-Weather'</span>
+                        </p>
+                        <h1 class="fw-bold">
+                            get the letest<span class="text-info"> weather</span> of your
+                            city..
+                        </h1>
+                        <a href="/weather"><button class="btn-lg btn btn-outline-info">
+                                Check Now
+                            </button></a>
+                    </div>
+                    <div class="col-md-6 main_header_right">
+                        <div>
+                            <img src="./images/world3.png" class="world-img w-100 " alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fotter.. -->
+    {{>footer}}
+</body>
+
+</html>

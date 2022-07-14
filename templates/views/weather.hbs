@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLinks}}
+</head>
+
+<body>
+    {{>navbar}}
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-6">
+                    <div class="card border text-light" style="border-radius: 10px; background-color: rgb(48, 56, 56)">
+                        <div class="card-body p-4">
+                            <div class="row justify-content-center align-items-center h-100">
+                                <div class="col-md-10 input-group m-3">
+                                    <input type="search" class="form-control form-control-lg"
+                                        placeholder="Enter city name..." id="input_city" style="border-radius: 5px;"
+                                        autocomplete="off">
+                                    <button class="btn btn-primary btn-lg" style="border-radius: 5px;"
+                                        id="submitButton">Search</button>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <p class="city_name text-center" id="city_name"></p>
+                                <div class="middle-layer">
+                                    <div class="row d-flex text-center justify-content-around">
+                                        <div class="col-md-12">
+                                            <div class=" justify-content-around">
+                                                <p class="display-2 font-weight-bold" id="temp"></p>
+                                                <p class="h3" id="currTime"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                                    <div class="d-flex justify-content-center ">
+                                        <div class="blink m-auto">
+                                            <img id="icon" class="text-info" src="" width="120px">
+                                        </div>
+                                        <div class="m-auto">
+                                            <p class="h2"><span class="ms-1" id="weather"></span></p>
+                                            <p class="h2"><span class="ms-1" id="wind_speed"></span></p>
+                                            <p class="h2"><span class="ms-1" id="humidity"></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- fotter.. -->
+    {{>footer}}
+    <script src="js/main.js"></script>
+</body>
+
+</html>

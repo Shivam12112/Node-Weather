@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:wght@600&family=Charis+SIL&family=Hahmlet:wght@600&family=Ibarra+Real+Nova:wght@400;615&family=Montserrat&family=Old+Standard+TT&display=swap");
+* {
+  font-family: "Andada Pro", serif;
+}
+:root {
+  --main-bg: #1e271e;
+  --main-color: #0097e6;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.navbar-nav {
+  margin-left: auto;
+}
+.main_menu {
+  background-color: var(--main-bg);
+}
+.navbar {
+  background-color: var(--main-bg);
+}
+.navbar a {
+  color: white;
+  font-size: 2rem;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+.main_header_left {
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main_header_left p {
+  font-size: 2rem;
+}
+.main_header_left h1 {
+  font-size: 3rem;
+  margin: 0.1rem 0 1rem 0;
+  text-transform: capitalize;
+}
+.main_header_left button {
+  padding: 1.8rem, 2rem;
+  border-radius: 2rem;
+  font-size: 1.8rem;
+  content: "\f195";
+  margin: 2rem auto;
+  box-shadow: 0 8px 6px -6px #000;
+}
+
+.form-control {
+  border-radius: 1rem;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.main_header_right {
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--main-bg);
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  line-height: 5rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .main_header_left {
+    height: auto;
+    margin: 8rem 0;
+  }
+  .main_header_right {
+    height: auto;
+    margin-top: 4rem;
+  }
+}
+
+.blink {
+  animation: blinker 5s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.parent {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.child {
+  margin: auto;
+  width: 100rem;
+  /* height: 60rem; */
+}
+/* weather Page */
+.city_name {
+  font-size: 3.5rem;
+}
+
+.data_hidden {
+  visibility: hidden;
+}
